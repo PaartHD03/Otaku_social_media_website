@@ -1,0 +1,339 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1d1d1d;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2a2a4e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+/* Home Page */
+.home-container {
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.home-container h1 {
+    font-size: 3.5rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+    animation: slideInLeft 2s ease-out;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 30px;
+    animation: slideInRight 2s ease-out;
+}
+
+.home-container .btn {
+    padding: 12px 30px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 2.5s ease-out;
+}
+
+.home-container .btn:hover {
+    background-color: #008c99;
+    transform: translateY(-5px);
+}
+
+/* Hero Section Image Animation */
+.hero-image {
+    width: 100%;
+    height: 400px;
+    background: url('path-to-your-hero-image.jpg') no-repeat center center/cover;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Banner Section */
+.banner-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 1200px; /* Adjust this value based on your preference */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #2a2a4e;
+    text-align: center;
+    padding: 20px;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+}/* Upload Page */
+.upload-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #2a2a4e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-out;
+}
+
+.upload-container h1 {
+    text-align: center;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.upload-container input, .upload-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.upload-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.upload-container button:hover {
+    background-color: #008c99;
+    transform: translateY(-5px);
+}
+
+/* Animedex Page */
+.animedex-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2a2a4e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-out;
+}
+
+.animedex-container h1 {
+    text-align: center;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#searchInput {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 2px solid #00bcd4;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #008c99;
+}
+
+/* Anime Result Cards */
+.anime-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.anime-card {
+    width: 300px;
+    background-color: #1f2a3d;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.anime-card:hover {
+    transform: translateY(-10px);
+}
+
+.anime-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.anime-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.anime-card-header {
+    background-color: #2a3a58;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.anime-card-body {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}/* Forum Page */
+.forum-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #2a2a4e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.forum-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+#forum-threads {
+    margin-bottom: 20px;
+}
+
+.thread-card {
+    background-color: #3a3a5e;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thread-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#thread-title, #thread-content {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008c99;
+}
+
+/* Login Page */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #2a2a4e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-container .link {
+    color: #00bcd4;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+
+.login-container .link:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.thread-card, #create-thread-form, .login-container {
+    animation: fadeIn 1.5s ease-out;
+}

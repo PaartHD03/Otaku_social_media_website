@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeDex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="upload.html">Upload Anime</a>
+        <a href="animedex.html">AnimeDex</a>
+        <a href="forum.html">Forum</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <div class="animedex-container">
+        <h1>AnimeDex</h1>
+          <!-- Search Bar Section -->
+    <section class="search-section">
+        <input type="text" alignment="" id="searchInput" placeholder="Search for Anime Character..." oninput="searchAnime()">
+    </section>
+
+    <!-- Display Search Results -->
+    <section class="anime-results" id="animeResults">
+        <!-- Results will be displayed here -->
+    </section>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script> <!-- For CSV parsing -->
+</body>
+</html>
